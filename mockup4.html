@@ -4,7 +4,40 @@
     <meta charset="UTF-8">
     <title></title>
    </head>
+
+   <style type="text/css">
+		.inputs { padding: 1em; }
+		#tab { padding: 1em; }
+   </style>
    <body>
 
+
+	<form id="form">
+
+		<h2>Your Information</h2>
+
+		<div class="inputs">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name">
+		</div>
+
+		<div class="inputs">
+		<label for="email">Email:</label>
+		<input id="email" type="email" name="email">
+		</div>
+
+		<div class="inputs">
+		<label for="number">Phone:</label>
+		<input id="number" type="number" name="number">
+		</div>
+
+		<div class="inputs">
+			<input for="fromsf" type="checkbox" name="fromsf" value="fromsf">From San Francisco<span id="tab"/>
+			<input for="notfrsf" type="checkbox" name="notfrsf" value="notfrsf">Not From San Francisco
+		</div>
+
+		<input class="inputs" type="submit">
+
+	</form>
    </body>
 </html>
